@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.sql.SQLIntegrityConstraintViolationException;
 
+
 /**
  * 全局异常处理器，处理项目中抛出的业务异常
  */

@@ -28,6 +28,7 @@ public class AutoFillAspect {
     @Pointcut("execution(* com.sky.mapper.*.*(..)) && @annotation(com.sky.annotation.AutoFill)")
     public void AutoFillPointcut(){}
 
+
     @Before("AutoFillPointcut()")
     public void AutoFill(JoinPoint joinPoint){
         OperationType value = ((MethodSignature) joinPoint.getSignature()).getMethod().getAnnotation(AutoFill.class).value();
