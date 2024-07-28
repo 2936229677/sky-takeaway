@@ -11,3 +11,8 @@ sky:
     accessKeyId: ${ALIBABA_CLOUD_ACCESS_KEY_ID}
     accessKeySecret: ${ALIBABA_CLOUD_ACCESS_KEY_SECRET}
     bucketName: sky-take-out-2936
+  redis:
+    host: localhost
+    port: 6379
+    auth: 222936
+    database: 10
