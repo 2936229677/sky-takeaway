@@ -18,7 +18,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/admin/common")
 @Api(tags = "文件上传")
-public class CommonContorller {
+public class CommonController {
     @Autowired
     private AliOssUtil aliOssUtil;
 
