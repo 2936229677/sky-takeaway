@@ -23,6 +23,9 @@ public interface SetmealMapper {
     @Select("select count(id) from setmeal where category_id = #{categoryId}")
     Integer countByCategoryId(Long id);
 
+    @Select("select * from setmeal where id = #{id}")
+    Setmeal getById(Long id);
+
     List<Setmeal> list(Setmeal setmeal);
 
     @Select("select * from setmeal_dish where dish_id = #{id}")
